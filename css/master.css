@@ -1,0 +1,401 @@
+
+body,
+h1,
+h2,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+/*Styling for body*/
+body {
+    font-family: 'Calibre', 'Inter', 'San Francisco', 'SF Pro Text', -apple-system, system-ui, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+    color: #333;
+}
+/* Styling for Navigation Bar */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 30px;
+    text-align: right;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+}
+/* Styling for intro section */
+.intro_name {
+    font-weight: 600;
+}
+
+.intro_header {
+    display: flex;
+}
+/* Header styling */
+header {
+    padding: 120px 100px;
+    justify-content: space-around;
+}
+
+.header_img {
+    height: 500px;
+    padding: 120px 100px;
+    border-radius: 50%;
+}
+
+.header_hello {
+    padding-bottom: 50px;
+}
+
+.header_tag {
+    max-width: 900px;
+    font-style: normal;
+    line-height: 150%;
+    /* text-align: justify; */
+}
+/* Styling for images */
+img {
+    max-width: 100%;
+    height: auto;
+    
+}
+/* Styling for h1 tag */
+h1 {
+    margin-top: 10px;
+    font-weight: normal;
+}
+/* Section styling for all */
+section {
+    margin-bottom: 30px;
+}
+/* Styling for h3 tag */
+h2 {
+    color: black;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+/* Work Experience Styling - Starts */
+#work-experience {
+    position: relative;
+    width: 1200px;
+    margin: 100px auto;
+}
+
+.heading-work {
+    text-align: center;
+}
+
+.container {
+    padding: 10px 50px;
+    /* background-color: #e3e3e3; */
+    width: 40%;
+    position: relative;
+
+}
+
+.right-container {
+    left: 50%;
+}
+
+.right-container small {
+    left: -200px;
+}
+
+.container small {
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    right: -200px;
+    top: 100px;
+    z-index: 10;
+}
+
+#work-experience::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 93%;
+    background-color: black;
+    top: 50px;
+    left: 50%;
+    margin-left: -3px;
+    z-index: -1;
+}
+/* Work Experience Styling - Ends */
+
+/* Education Styling - Starts */
+#education {
+    position: relative;
+    width: 1200px;
+    margin: 100px auto;
+}
+
+#education::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 93%;
+    background-color: black;
+    top: 50px;
+    left: 50%;
+    margin-left: -3px;
+    z-index: -1;
+}
+
+.circle {
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    background-color: blue;
+    border-radius: 50%;
+    right: -23px;
+    top: 105px;
+}
+
+.right-container .circle {
+    left: -7px;
+}
+/* Education Styling - Starts */
+
+.text-box {
+    padding: 20px 30px;
+    background-color: white;
+    border-radius: 50px;
+    box-shadow: 5px 10px #888888;
+    /* font-size: ; */
+}
+
+footer {
+    margin-top: 30px;
+    text-align: center;
+    padding: 30px 0;
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 600px) {
+    header {
+        padding-bottom: 10px;
+    }
+
+    img {
+        margin-bottom: 10px;
+    }
+
+    footer {
+        margin-top: 20px;
+    }
+}
+/* Skills Styling - Starts */
+#skills {
+    /* display: flex; */
+    margin-top: 20px;
+    flex-wrap: wrap;
+    /* padding: 40px; */
+    justify-content: center;
+
+    
+}
+.sub-skills{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.skills-list {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 1000px;
+}
+
+.skills-list h3 {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.skills-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills-list li {
+    margin-bottom: 8px;
+    font-size: 1em;
+    color: white;
+    /* background-color: #007ACC; */
+}
+
+.badge {
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.badge-c {
+    background-color: #007ACC;
+    color: white;
+}
+
+.badge-java {
+    background-color: #E11E27;
+    color: white;
+}
+
+.badge-python {
+    background-color: #FFD43B;
+    color: black;
+}
+
+.badge-sql {
+    background-color: #FFA500;
+    color: white;
+}
+
+.badge-plsql {
+    background-color: #7D26CD;
+    color: white;
+}
+
+.badge-html {
+    background-color: #E34C26;
+    color: white;
+}
+
+.badge-css {
+    background-color: #1572B6;
+    color: white;
+}
+
+.badge-js {
+    background-color: #F7DF1E;
+    color: black;
+}
+
+.badge-spring {
+    background-color: #6DB33F;
+    color: black;
+}
+
+.badge-angular {
+    background-color: #DD0031;
+    color: white;
+}
+
+.badge-react {
+    background-color: #61DAFB;
+    color: black;
+}
+
+.badge-node {
+    background-color: #68A063;
+    color: white;
+}
+
+.badge-oracle-erp {
+    background-color: #003366;
+    color: white;
+}
+
+.badge-oracle-apex {
+    background-color: #FFA500;
+    color: black;
+}
+
+.badge-rest {
+    background-color: #6C3483;
+    color: white;
+}
+
+.badge-git {
+    background-color: #6D6E71;
+    color: white;
+}
+
+.badge-svn {
+    background-color: #806537;
+    color: white;
+}
+.sub-projects{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px;
+}
+/* Skills Styling - Ends */
+/* Project Styling - Starts */
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 300px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+/* Project Styling - Starts */
+
+.description {
+    font-size: 16px;
+}
+/* Assignment Styling - Starts */
+#assignments {
+    margin-top: 20px;
+    /* padding: 150px; Adjust as needed */
+    
+}
+
+#assignments h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+    
+}
+
+#assignments ul {
+    list-style-type: none;
+    padding-left: 300px;
+}
+
+#assignments ul li {
+    margin-bottom: 5px;
+}
+
+#assignments ul li a {
+    color: #007bff; /* Link color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#assignments ul li a:hover {
+    color: #0056b3; /* Hover color */
+}
+/* Assignment Styling - Ends */
